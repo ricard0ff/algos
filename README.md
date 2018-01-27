@@ -1,2 +1,2 @@
 # stuffy
-algos
+stocks
