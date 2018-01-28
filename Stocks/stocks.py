@@ -16,6 +16,7 @@ def get_profit(alist):
             print ("not good enough profit")
 
     print ("The biggest profit you can make is %s" % (profit))
+    return 0
 
 
 def main():
