@@ -14,6 +14,7 @@ def get_high_product(alist):
     else:
         print ("we have at least a negative")
         #at this point we should count to see if we can leverage two negative numbers to produce a positive:
+        #todo we still need to take into consideration just one negative number in the list
         negative_count = 0
         for numbers in alist:
             if numbers <0:
@@ -24,9 +25,6 @@ def get_high_product(alist):
             top_3_abs_values = alist_abs[:3]
             highest_values = np.prod(np.array(top_3_abs_values))
             print (highest_values)
-
-
-
 
 
 def main():
