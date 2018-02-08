@@ -14,7 +14,7 @@ def dividebcd(numerator, denominator):
             count = count + 1
         return count
 
-
+#implement rshit in native python
 def newdiv(numerator, denominator):
     sizeremainder = numerator - denominator
     r = (1 << (2*1)) // (numerator >> (denominator - 1))
