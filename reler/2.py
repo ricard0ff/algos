@@ -1,24 +1,26 @@
-def fibo(index_to_start,number_up_to):
+def fibo(index_to_start, number_up_to):
     #create two entries to start the sequence
-    fibonacci_list = [1, 2]
+    fibonacci_list = [index_to_start[0], index_to_start[1]]
     result = 0
-
     for index in range(2, number_up_to):
-        if index == 1000000:
-            print "bazinga"
         number = fibonacci_list[index-1] + fibonacci_list[index-2]
         fibonacci_list.append(number)
+        fibonacci_list[3:]
         if number % 2 == 0:
             result += number
-    print "the result is :"+str(result)
-    print fibonacci_list
-
     return result
 
 
-def main():
-    print(fibo((0,1),10))
+def even_fibo(limit):
+    a, b = 0, 1
+    while a < limit:
+            yield a
+            a, b = b, a + b
 
+
+def main():
+    print(fibo((1, 2), 4000000))
+#    print(sum(i for i in even_fibo(10) if i % 2 == 0))
 
 
 if __name__ == "__main__":
