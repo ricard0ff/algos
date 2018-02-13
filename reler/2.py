@@ -11,16 +11,22 @@ def fibo(index_to_start, number_up_to):
     return result
 
 
-def even_fibo(limit):
-    a, b = 0, 1
+def fibo_generator(limit):
+    a, b = 1, 2
     while a < limit:
-            yield a
-            a, b = b, a + b
+        yield a
+        a, b = b, a + b
 
 
 def main():
-    print(fibo((1, 2), 4000000))
+#    print(fibo((1, 2), 4000000))
 #    print(sum(i for i in even_fibo(10) if i % 2 == 0))
+     result_even_sum = 0
+     for i in fibo_generator(4000000):
+         if i % 2 == 0:
+             result_even_sum += i
+     print "TOTAL"
+     print result_even_sum
 
 
 if __name__ == "__main__":
