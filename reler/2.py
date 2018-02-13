@@ -12,15 +12,14 @@ def fibo(index_to_start, number_up_to):
 
 
 def fibo_generator(limit):
-    a, b = 1, 2
-    while a < limit:
-        yield a
-        a, b = b, a + b
+    #make sure there are >=2 numbers in the initial index
+    index0, index1 = 1, 2
+    while index0 < limit:
+        yield index0
+        index0, index1 = index1, index0 + index1
 
 
 def main():
-#    print(fibo((1, 2), 4000000))
-#    print(sum(i for i in even_fibo(10) if i % 2 == 0))
      result_even_sum = 0
      for i in fibo_generator(4000000):
          if i % 2 == 0:
