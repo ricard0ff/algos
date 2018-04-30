@@ -1,6 +1,6 @@
 import math
 import itertools
-import past
+#import past
 
 def prime_generator(primatize_number):
  #   if primatize_number 
