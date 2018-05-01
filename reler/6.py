@@ -14,8 +14,6 @@ def main():
   result = squared(squared_total_sum) - sum_of_squares
   print result
 
-        
-
 
 
 if __name__ == "__main__":
