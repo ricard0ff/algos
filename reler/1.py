@@ -3,7 +3,7 @@ def multiple(number_up_to):
     for i in range(1, number_up_to):
         if i % 3 == 0 or i % 5 == 0:
             result += i
-    print "the result is :"+str(result)
+    print ("the result is :" + str(result))
     return result
 
 

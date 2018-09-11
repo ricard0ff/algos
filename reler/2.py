@@ -24,8 +24,8 @@ def main():
      for i in fibo_generator(4000000):
          if i % 2 == 0:
              result_even_sum += i
-     print "TOTAL"
-     print result_even_sum
+     print ("TOTAL")
+     print (result_even_sum)
 
 
 if __name__ == "__main__":
